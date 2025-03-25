@@ -1,0 +1,545 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(127, 255, 185, 0.212);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links {
+
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav-links li a:hover {
+    color: #007bff;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn, .btn-outline {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-outline {
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+}
+
+.btn:hover, .btn-outline:hover {
+    opacity: 0.9;
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service h3 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.service p {
+    color: #666;
+}
+
+.Read {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(5, 14, 5);
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(182, 215, 182);
+
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.about-name {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Add these styles to your second.css or in a <style> tag in the <head> */
+.about-description {
+    font-size: 1.1rem;
+    max-height: 100px; /* Adjust this value as needed */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease-out; /* Smooth transition for height change */
+}
+
+.about-description.expanded {
+    max-height: none; /* Remove height limit when expanded */
+}
+
+.read-more-btn {
+    cursor: pointer;
+    color: #007bff; /* Or any color you prefer */
+    display: inline-block; /* Allows margin and padding to work correctly */
+    margin-top: 10px; /* Add some space between text and button */
+}
+
+#moreText {
+    display: none; /* Initially hide the extra text */
+}
+
+.about-description.expanded #moreText {
+    display: inline; /* Show extra text when expanded */
+}
+
+.about-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-title{
+    color: #007bff;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.skill-category {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.skill-tags button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-tags button:hover {
+    background-color: #e0e0e0;
+}
+
+
+.section-subtitle{
+    color: #007bff;
+    font-size: 1.3rem;
+}
+
+.section-title{
+    font-size: 2rem;
+}
+
+
+.projects {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.project p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-tags button {
+    background-color: #e6f7ff;
+    color: #1890ff;
+    border: 1px solid #91d5ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-tags button:hover {
+    background-color: #bae7ff;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.github-button {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.github-button:hover {
+    opacity: 0.9;
+}
+
+
+
+.get{
+    margin: 5rem;
+    font-size: 1.3rem;
+
+    color: #007bff;
+
+}
+
+
+
+.gett{
+    margin: -2rem;
+
+    font-size: 2rem;
+
+}
+
+
+
+hr{
+
+    margin: 0 600px 0 600px;
+
+    border:3px solid #007bff ;
+
+    border-radius: 2rem;
+
+}
+
+
+
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+    
+    
+    
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+    
+    
+.form-inputs {
+    width: 55%;
+    
+}
+    
+    
+.contact-info {
+    
+    width: 40%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+    
+    
+    
+.input-group {
+    margin-bottom: 20px;
+    
+}
+    
+    
+    
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+    
+    
+    
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+    
+    
+    
+textarea {
+    height: 150px;
+    
+}
+    
+    
+    
+.send-message {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+    
+.send-message:hover {
+    background-color: #0056b3;
+    
+}
+    
+    
+    
+.info-group {
+    
+    margin-bottom: 15px;
+    
+}
+    
+    
+.info-group label {
+    
+    font-weight: bold;
+    
+    display: block;
+    
+}
+    
+    
+    
+.connect-with-me {
+    
+    margin-top: 30px;
+    
+}
+    
+    
+    
+.connect-buttons {
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+    
+    
+    
+.schedule-meeting, .send-direct-email {
+    
+    background-color: #e0e0e0;
+    color: #333;
+    
+    padding: 10px 15px;
+    
+    border: none;
+    
+    border-radius: 4px;
+    
+    cursor: pointer;
+    
+    font-size: 14px;
+    
+}
+    
+    
+    
+.schedule-meeting:hover, .send-direct-email:hover {
+    background-color: #d0d0d0;
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
